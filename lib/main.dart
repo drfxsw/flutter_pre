@@ -3,6 +3,7 @@ import 'components/mission_01.dart';
 import 'components/mission_02.dart';
 import 'components/mission_03.dart';
 import 'components/mission_04.dart';
+import 'components/mission_05.dart';
 
 void main() {
   runApp(MyApp());
@@ -67,6 +68,16 @@ class MainScreen extends StatelessWidget {
                 );
               },
               child: Text('Mission 04'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // 버튼 클릭시 mission_04.dart 파일의 화면으로 이동
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Mission05Screen()),
+                );
+              },
+              child: Text('Mission 05'),
             ),
           ],
         ),
