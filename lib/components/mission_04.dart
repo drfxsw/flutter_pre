@@ -74,6 +74,7 @@ class _Mission04ScreenState extends State<Mission04Screen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
+                  Text('학생 리스트'),
                   // 학생 이름을 출력하는 리스트
                   for (String student in students)
                     Text(
