@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Mission02Screen extends StatelessWidget {
+  const Mission02Screen({super.key});
+
   @override
   Widget build(BuildContext context) {
     int a = 10;

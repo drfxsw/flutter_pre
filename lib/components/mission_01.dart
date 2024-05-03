@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Mission01Screen extends StatelessWidget {
+  const Mission01Screen({super.key});
+
   @override
   Widget build(BuildContext context) {
     // int = 정수형, String = 문자열, double = 실수형, bool = 불리언, List<String> = 문자열 리스트

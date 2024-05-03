@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Mission03Screen extends StatelessWidget {
+  const Mission03Screen({super.key});
+
   @override
   Widget build(BuildContext context) {
     int width = 80;

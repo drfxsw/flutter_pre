@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Mission04Screen extends StatefulWidget {
+  const Mission04Screen({super.key});
+
   @override
   _Mission04ScreenState createState() => _Mission04ScreenState();
 }
@@ -13,7 +15,7 @@ class _Mission04ScreenState extends State<Mission04Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mission 04'),
+        title: const Text('Mission 04'),
       ),
       body: Center(
         child: Column(
@@ -26,7 +28,7 @@ class _Mission04ScreenState extends State<Mission04Screen> {
             const SizedBox(height: 10), // 여백
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 50),
-              child: Column(
+              child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
@@ -55,7 +57,7 @@ class _Mission04ScreenState extends State<Mission04Screen> {
                       labelText: '학생 이름을 입력하세요',
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   ElevatedButton(
                     onPressed: () {
                       addStudent(students, _textEditingController.text);
@@ -74,7 +76,7 @@ class _Mission04ScreenState extends State<Mission04Screen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text('학생 리스트'),
+                  const Text('학생 리스트'),
                   // 학생 이름을 출력하는 리스트
                   for (String student in students)
                     Text(
